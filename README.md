@@ -1,86 +1,30 @@
-<header>
+# 📜 问题的起点：Core-01 模型的逻辑起源
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
-
-[English](https://github.com/skills/introduction-to-github) | 中文
-
-> 本课程翻译自 Github Skills，全部课程请点击 [这里查看](https://gitcn.org/getting-started)
-
-# GitHub 快速入门
-
-_我们将在不到一小时的时间内学习如何使用GitHub_
-
-</header>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: 新建分支
-
-_欢迎来到 "GitHub 入门课程"! :wave:_
-
-**什么是GitHub**: GitHub 是一个使用 _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ 进行版本控制和协作的代码托管平台，是一个分享和贡献开源软件的流行平台。
-
-📺 可以看看这段 Youtube 介绍视频：[什么是 GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
-
-**什么是仓库（Repository）？**：_[仓库](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ 是 GitHub 最核心的元素。一个仓库就像一个项目文件夹，里面包含所有项目文件（包括文档），并存储每个文件的修改历史记录。 仓库可以有多个协作者，仓库可以是公开的，也可以设置为私有的。欲了解更多信息，请查看 GitHub 文档中的"[关于仓库](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)"。
-
-
-**什么是分支（Branch）？**: _[分支](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ 是您仓库的并行版本。每个仓库在创建时都有一个默认主分支，通常叫 `main`，它代表项目的主线版本。
-
-创建新的分支可以让你从 main 复制一份独立的副本，方便修改、测试或开发新功能，而不会影响主项目。
-许多人会为特定功能开独立分支，这样可以在不干扰他人的情况下进行开发。
-
-使用分支的好处是，你的修改和主分支是隔离的 —— 换句话说，每个人的工作都能保持安全。
-更多介绍请看文档：[关于分支](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)。
-
-**什么是 Profile README？**: _[Profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ 是 GitHub 个人主页上的自我介绍部分。你可以在这里展示自己的信息、项目或兴趣。
-GitHub 会把它显示在你个人主页的顶部。更多内容可参考 "[管理个人资料自述文件](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
-
-![profile-readme-example](/images/profile-readme-example.png)
-
-### :keyboard: 实操环节：创建你的第一个分支
-
-1. 打开一个新的浏览器标签页，进入你刚创建的仓库。保持这个页面不关，边看步骤边操作。
-2. 在仓库顶部导航栏中，点击 **< > Code** 选项。
-
-   ![code-tab](/images/code-tab.png)
-
-3. 点击 **main** 分支的下拉菜单。
-
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
-
-4. 在输入框中输入新分支名 `my-first-branch`。注意：必须使用这个名字，才能触发课程后续流程。
-
-5. 点击 **Create branch: my-first-branch** 按钮来创建分支。
-
-   ![create-branch-button](/images/create-branch-button.png)
-
-   创建后，你的仓库会自动切换到这个新分支，下拉菜单中也会显示出 `my-first-branch`。
-
-6. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步。
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+> **背景记事：** 本文档记录了模型构建最初的观测点与思辨路径，旨在通过对真实社会博弈的解构，推导出复杂系统生存逻辑的底层变量。
 
 ---
 
-获取帮助: [在我们的讨论板中发帖](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [查看 GitHub 状态页面](https://www.githubstatus.com/)
+### 1. 现实背景：2026 年初的舆论坍缩
+2026 年 1 月中旬，网络焦点集中在**西贝贾国龙**与**网红罗永浩**关于“预制菜”定义的隔空约架。随后官媒发表社论，强调“营造清朗网络舆论环境”。
 
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+这一管理行为引发了作者对系统信息传递与治理逻辑的深度思考。作为资深网民，我观测到管理层的压制行为虽然旨在肃清杂音，但实质上也改变了系统内部信息的流转特性。
 
-</footer>
+### 2. 核心矛盾：定义偏差与博弈空间
+* **偏差本质 ($\Delta$)：** 老百姓对“预制菜”的民间定义与国家标准草案定义之间存在显著**偏差**。这种矛盾早已存在，即便没有罗永浩引爆，也迟早会通过“温水煮青蛙”的方式导致市场信心的流失。
+* **博弈策略：** 企业（西贝）试图利用时间换取消费者观念转变的空间，期待偏差在时间内被消化，获得社会认可。
+* **坍缩触发：** 大流量主（罗永浩）的介入，将原本漫长的博弈时间瞬间压缩。这种对比好比物理意义上的**“逻辑坍缩”**，导致企业被迫在毫无缓冲的情况下直接面对巨大的民意冲击。
+
+### 3. 系统论视角的解构
+从管理层（官媒）的反应中，可以抽离出大型复杂系统运行的三个关键维度：
+
+1. **反馈 (Feedback)：** 舆论通过网络向管理层传递的过程。它受制于**时滞**（如推迟采样）、**精度**（键盘侠的噪声）、**强度**（舆论风暴）和**可达性**（能否影响决策层）。
+2. **偏差 (Deviation)：** 实际目标与期望目标之间的差距（即国标与民意标准的认知鸿沟）。
+3. **纠偏效率 (Correction Efficiency)：** 系统修正偏差并达到预期效果的速度。官媒抑制噪声，本质上是试图减小偏差的放大，以行政手段强行消化认知偏差。
+
+### 4. 逻辑升华
+这一事件揭示了：在一个复杂系统中，信息的传递压制（管理行为）旨在提高真实性，但在实际操作中，它同时也改变了反馈的强度与精度。
+
+**由此引发的核心思辨：**
+> **如果一个系统无法通过低阻抗的反馈来有效积累纠偏经验，其生存概率 ($S$) 将如何变化？**
+
+这就是 `Core-01` 模型探寻的终极问题。
